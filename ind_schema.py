@@ -5,22 +5,7 @@ import sys
 import json
 import jsonschema
 from jsonschema import validate
-
-
-schema = {
-    "type": "object",
-    "properties": {
-        "product": {
-            "type": "string"
-        },
-        "shop": {
-            "type": "string"
-        },
-        "cost": {
-            "type": "number"
-        }
-    }
-}
+from prod_schema import schema
 
 
 def add_product():
